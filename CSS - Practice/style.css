@@ -1,0 +1,98 @@
+/* clip-path */
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: rebeccapurple;
+    clip-path: circle(50% at 0 0);
+    transition: all 2s ease;
+}
+
+.container:hover{
+    clip-path: circle(100%);
+}
+
+/* transform: rotateY */
+.frame{
+    width: 500px;
+    height: 500px;
+    border: 3px solid rebeccapurple;
+    perspective: 200px;
+}
+.shape{
+    width: 500px;
+    height: 500px;
+    background-color: lightblue;
+    transform: rotateY(45deg);
+    transition: all 3s ease;
+}
+
+/* aspect-ratio */
+.player{
+    width: 100%;
+    background-color: blueviolet;
+    aspect-ratio: 16/9;
+
+}
+
+/* filter */
+img{
+    /* filter: blur(5px); */
+    /* filter: brightness(200%); */
+    /* filter: contrast(200%); */
+    filter: grayscale(100%);
+}
+img:hover{
+    filter: none;
+}
+/* img:active{
+    filter: none;
+} */
+
+.spoiler{
+    filter: blur(10px);
+}
+.spoiler:hover{
+    filter: none;
+}
+
+/* Styling inputs */
+input{
+    padding: 10px; 
+    border: 1px solid red; 
+
+    /* change text cursor color*/
+    caret-color: red;  
+}
+input:focus{
+    outline: 1px solid red;
+}
+input::placeholder{
+    color:  red;
+}
+
+/* .item h1,
+  .item h2,
+  .item h4,
+  .item p{
+    color: blue;
+  } */
+  .item :is(h1,h2,h4){
+    color: blue;
+  }
+
+  .item :not(h3) {
+    color: red;
+  }
+  
+  .review:has(button) .content {
+    filter: blur(10px);
+  }
+  
+  video {
+    width: 100%;
+    aspect-ratio: 16/9;
+  }
+  
+  /* ::cue {
+    font-size: 50px;
+  } */
