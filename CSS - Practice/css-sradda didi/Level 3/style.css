@@ -2,10 +2,16 @@
   height: 100px;
   width: 200px;
   background-color: green;
+  font-size: 10px;
 }
 .box2 {
   height: 50px;
   width: 30%; /* parents width of 30% */
   background-color: yellow;
   margin-left: 10%; /* parents width of 10% */
+
+  font-size: 2em; /* parents font-size *2(em)
+                  means 2 times of parent's font size */
+  width: 5em; /* font size of element itself so font-size is
+  20px then width will be 20*5= 100px */
 }
