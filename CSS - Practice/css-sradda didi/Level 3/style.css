@@ -13,5 +13,8 @@
   font-size: 2em; /* parents font-size *2(em)
                   means 2 times of parent's font size */
   width: 5em; /* font size of element itself so font-size is
-  20px then width will be 20*5= 100px */
+               20px then width will be 20*5= 100px */
+  /* rem - Root Em */
+  width: 5rem; /* font size of root element
+  so here root element of font size is 16px* 5(rem) = 80px */
 }
