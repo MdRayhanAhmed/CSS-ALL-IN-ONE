@@ -1,0 +1,10 @@
+div {
+  height: 100px;
+  width: 100px;
+  /* background-color: red; */
+  background-image: url("tiger-photo.jpg");
+  background-size: cover;
+  position: fixed;
+  color: white;
+  right: 0px;
+}
